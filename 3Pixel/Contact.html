@@ -7,12 +7,150 @@
 <body>
 	<ul>
 		<img class="logo" src="./Images/logo.gif">
-  		<li><a href="index.html">Home</a></li>
-  		<li><a href="Teams.html">Teams</a></li>
-  		<li><a href="Games.html">Games</a></li>
-  		<li><a href="About.html">About Us</a></li>
-  		<li><a href="Contact.html">Contact Us</a></li>
+  		<li class="default"><a href="index.html">Home</a></li>
+  		<li class="default"><a href="Teams.html">Teams</a></li>
+  		<li class="default"><a href="Games.html">Games</a></li>
+  		<li class="default"><a href="About.html">About Us</a></li>
+  		<li class="default"><a href="Contact.html">Contact Us</a></li>
+  		<li class="login"><a href="Login.html">Login</a></li>
+  		<li class="sign-up"><a href="SignUp.html">Sign Up</a></li>
 	</ul>
 	<h1>Contact</h1>
 </body>
 </html>
+
+<style>
+* {
+  	align-content: center;
+  	align-items: center;
+  	text-align: center;
+  	justify-content: center;
+  	width: 100%;
+  	zoom:  100%;
+}
+
+ul {
+	width: 100%;
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	background-color: #333;
+  	display: inline-flex;
+  	justify-content: space-between;
+  	flex: 1;
+  	align-content: center;
+  	align-items: center;
+  	text-align: center;
+  	justify-content: center;
+  	transition: top 0.2s ease-in-out;
+  	zoom:  100%;
+}
+
+.default a{
+	color: white;
+	zoom:  100%;
+}
+
+li {
+  	display: inline;
+  	float: left;
+  	align-content: center;
+  	align-items: center;
+  	text-align: center;
+  	justify-content: center;
+  	zoom:  100%;
+}
+
+li a {
+  	display: block;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	margin: 0px 15px; /* Space change between buttons */
+  	align-content: center;
+  	align-items: center;
+  	text-align: center;
+  	justify-content: center;
+  	border-right: 2px solid #bbb;
+  	zoom:  100%;
+}
+
+/* Changes the link color to #111 (black) on hover */
+li a:hover {
+  	background-color: #111;
+  	zoom:  100%;
+}
+
+li:last-child {
+  	border-right: none;
+  	align-content: center;
+  	align-items: center;
+  	text-align: center;
+  	justify-content: center;
+  	border-right: 2px solid #bbb;
+  	zoom:  100%;
+}
+
+
+.logo {
+  	height: 100px;
+  	width: 160px;
+  	align-content: left;
+  	align-items: left;
+  	text-align: left;
+  	justify-content: left;
+  	left:100px;
+  	zoom:  100%;
+
+}
+
+.twitter {
+  	align-content: right;
+  	align-items: right;
+  	text-align: right;
+  	justify-content: right;
+  	padding-top: 630px;
+  	zoom:  100%;
+}
+
+.youtube {
+  	position: absolute;
+  	bottom: 10px;
+  	width: 100%;
+  	zoom:  100%;
+}
+
+.auto-resizable-iframe {
+  	margin: 0px auto;
+  	zoom:  100%;
+}
+
+.auto-resizable-iframe > div {
+  	position: relative;
+  	padding-bottom: 75%;
+  	height: 0px;
+  	zoom:  100%;
+}
+
+.auto-resizable-iframe iframe {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 100%;
+  	height: 1100px;
+  	zoom:  100%;
+}
+
+.login a{
+	font-size: 18px;
+	color: red;
+	zoom:  100%;
+}
+
+.sign-up a{
+	font-size: 18px;
+	color: blue;
+	zoom:  100%;
+}
+</style>
