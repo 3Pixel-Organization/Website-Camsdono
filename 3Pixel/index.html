@@ -3,8 +3,10 @@
 <head>
 	<title>3Pixel | Home</title>
 	<link rel="stylesheet" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
-<body style="">
+<body>
 	<ul>
 		<img class="logo" src="./Images/logo.gif">
   		<li class="default"><a href="index.html">Home</a></li>
@@ -12,15 +14,19 @@
   		<li class="default"><a href="Games.html">Games</a></li>
   		<li class="default"><a href="About.html">About Us</a></li>
   		<li class="default"><a href="Contact.html">Contact Us</a></li>
-  		<li class="login"><a href="Login.html">Login</a></li>
-  		<li class="sign-up"><a href="SignUp.html">Sign Up</a></li>
 	</ul>
-	<div class="twitter">
-		<a class="twitter-timeline" data-width="500" data-theme="dark" href="https://twitter.com/3PixelGameDev?ref_src=twsrc%5Etfw">Tweets by 3PixelGameDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-	</div>	
-	<div class="youtube">
-		<iframe width="100" height="610" src="https://www.youtube.com/embed/ce7gTqGik2s?controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<div class="menu-container">
+		<div class="twitter-container">
+			<div class="twitter">
+				<a class="twitter-timeline" data-width="500" data-theme="dark" href="https://twitter.com/3PixelGameDev?ref_src=twsrc%5Etfw">Tweets by 3PixelGameDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>	
+		</div>
+		
+		<div class="youtube" style="padding-bottom:56.25%; position:relative; display:block; width: 100%">
+			<iframe width="100" height="610" src="https://www.youtube.com/embed/ce7gTqGik2s?controls=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
 	</div>
+	
 
 </body>
 </html>
@@ -32,6 +38,16 @@
   	justify-content: center;
   	width: 100%;
   	zoom:  100%;
+
+}
+
+body {min-width:300px;}
+
+#menu-container {
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    min-width:300px;
 }
 
 ul {
@@ -65,20 +81,23 @@ li {
   	text-align: center;
   	justify-content: center;
   	zoom:  100%;
+
 }
 
 li a {
+	margin: auto;
   	display: block;
   	text-align: center;
-  	padding: 14px 16px;
+  	padding: 12px 0;
   	text-decoration: none;
-  	margin: 0px 15px; /* Space change between buttons */
   	align-content: center;
   	align-items: center;
   	text-align: center;
   	justify-content: center;
   	border-right: 2px solid #bbb;
   	zoom:  100%;
+  	min-width:50px;
+  	width: 100%;
 }
 
 /* Changes the link color to #111 (black) on hover */
@@ -93,8 +112,8 @@ li:last-child {
   	align-items: center;
   	text-align: center;
   	justify-content: center;
-  	border-right: 2px solid #bbb;
   	zoom:  100%;
+  	margin-right: 60px;
 }
 
 
@@ -117,6 +136,24 @@ li:last-child {
   	justify-content: right;
   	padding-top: 630px;
   	zoom:  100%;
+  	position: absolute;
+  	width: 50%;
+  	 height:auto;
+}
+
+.twitter-timeline {
+	align-content: right;
+  	align-items: right;
+  	text-align: right;
+  	justify-content: right;
+    width: 100vw !important;
+}
+
+.twitter-container {
+	align-content: right;
+  	align-items: right;
+  	text-align: right;
+  	justify-content: right;
 }
 
 .youtube {
@@ -124,6 +161,7 @@ li:last-child {
   	bottom: 10px;
   	width: 100%;
   	zoom:  100%;
+  	position: absolute;
 }
 
 .auto-resizable-iframe {
@@ -146,6 +184,7 @@ li:last-child {
   	height: 1100px;
   	zoom:  100%;
 }
+
 
 .login a{
 	font-size: 18px;
