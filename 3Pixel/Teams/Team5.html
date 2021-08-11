@@ -2,16 +2,197 @@
 <html>
 <head>
 	<title>3Pixel | Team 5</title>
-	<link rel="stylesheet" href="teamStyle.css">
+	<meta name="viewport" content="width=device-width,inital-scale=1">
 </head>
 <body>
-	<ul>
-  		<li><a href="index.html">Home</a></li>
-  		<li><a href="Teams.html">Teams</a></li>
-  		<li><a href="Games.html">Games</a></li>
-  		<li><a href="About.html">About Us</a></li>
-  		<li><a href="Contact.html">Contact Us</a></li>
+	<ul style="background-color: #333;">
+		<img class="logo" src="../Images/logo.gif">
+  		<li class="default"><a href="../index.html">Home</a></li>
+  		<li class="default"><a href="../Teams.html">Teams</a></li>
+  		<li class="default"><a href="../Games.html">Games</a></li>
+  		<li class="default"><a href="../About.html">About Us</a></li>
+  		<li class="default"><a href="../Contact.html">Contact Us</a></li>
 	</ul>
-	<h1>Teams</h1>
+	<h1>Team 5</h1>
+	<ul style="color: #F0F0F0;">
+		<li><h2>Status: Team of supervisors that is inactive.</h2></li>
+	</ul>
+
 </body>
 </html>
+
+<style>
+@font-face {
+  font-family: RobotoRegular;
+  src: url(../Fonts/Roboto-Regular.ttf);
+}
+
+* {
+  	align-content: center;
+  	align-items: center;
+  	text-align: center;
+  	justify-content: center;
+  	width: 100%;
+  	zoom:  100%;
+  	background-color: #808080;
+  	font-family: RobotoRegular;
+}
+
+h1 {
+	color: #F0F0F0;
+}
+
+h2 {
+	color: #F0F0F0;
+	text-align: center;
+}
+
+ul {
+		width: 100%;
+	  list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	display: inline-flex;
+  	justify-content: space-between;
+  	flex: 1;
+  	align-content: center;
+  	align-items: center;
+  	text-align: center;
+  	justify-content: center;
+  	transition: top 0.2s ease-in-out;
+  	zoom:  100%;
+  	background-color: transparent;
+}
+
+.default a{
+	color: white;
+	zoom:  100%;
+}
+
+li {
+  	display: inline;
+  	float: left;
+  	align-content: center;
+  	align-items: center;
+  	text-align: center;
+  	justify-content: center;
+  	zoom:  100%;
+  	background-color: transparent;
+}
+
+li a {
+  	display: block;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	margin: 0px 15px; /* Space change between buttons */
+  	align-content: center;
+  	align-items: center;
+  	text-align: center;
+  	justify-content: center;
+  	border-right: 2px solid #bbb;
+  	zoom:  100%;
+  	background-color: transparent;
+}
+
+/* Changes the link color to #111 (black) on hover */
+li a:hover {
+  	background-color: #111;
+  	zoom:  100%;
+}
+
+li:last-child {
+  	border-right: none;
+  	align-content: center;
+  	align-items: center;
+  	text-align: center;
+  	justify-content: center;
+  	border-right: 2px solid #bbb;
+  	zoom:  100%;
+  	background-color: transparent;
+}
+
+
+.logo {
+  	height: 100px;
+  	width: 160px;
+  	align-content: left;
+  	align-items: left;
+  	text-align: left;
+  	justify-content: left;
+  	left:100px;
+  	zoom:  100%;
+  	background-color: transparent;
+}
+
+.twitter {
+  	align-content: right;
+  	align-items: right;
+  	text-align: right;
+  	justify-content: right;
+  	padding-top: 630px;
+  	zoom:  100%;
+}
+
+.youtube {
+  	position: absolute;
+  	bottom: 10px;
+  	width: 100%;
+  	zoom:  100%;
+}
+
+.auto-resizable-iframe {
+  	margin: 0px auto;
+  	zoom:  100%;
+}
+
+.auto-resizable-iframe > div {
+  	position: relative;
+  	padding-bottom: 75%;
+  	height: 0px;
+  	zoom:  100%;
+}
+
+.auto-resizable-iframe iframe {
+  	position: absolute;
+  	top: 0px;
+  	left: 0px;
+  	width: 100%;
+  	height: 1100px;
+  	zoom:  100%;
+}
+
+.login a{
+	font-size: 18px;
+	color: red;
+	zoom:  100%;
+}
+
+.sign-up a{
+	font-size: 18px;
+	color: blue;
+	zoom:  100%;
+}
+
+.button {
+  background-color: #4F7942;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 150px;
+  height: 85px;
+}
+
+.button:hover {
+	background-color: #04AA6D;
+}
+
+</style>
