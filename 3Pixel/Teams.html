@@ -1,17 +1,217 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title>3Pixel | Teams</title>
-	<link rel="stylesheet" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link ref="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 </head>
 <body>
-	<ul>
-  		<li><a href="Home.html">Home</a></li>
-  		<li><a href="Teams.html">Teams</a></li>
-  		<li><a href="Games.html">Games</a></li>
-  		<li><a href="About.html">About Us</a></li>
-  		<li><a href="contact.html">Contact Us</a></li>
+	<ul class="top-bar">
+		<img class="logo" src="./Images/logo.gif">
+		<li class="default"><a href="index.html">Home</a></li>
+		<li class="default"><a href="Teams.html">Teams</a></li>
+		<li class="default"><a href="Games.html">Games</a></li>
+		<li class="default"><a href="About.html">About Us</a></li>
+		<li class="default"><a href="Contact.html">Contact Us</a></li>
 	</ul>
-	<h1>Teams</h1>
+
+	<section>
+		<div class="container">
+			<h1 class="heading">Teams</h1>
+			<div class="card-wrapper">
+				<div class="card">
+					<img src="Images/Background1.png" alt="card background" class=""card-img>
+					<img src="Images/Team6.jpg" alt="profile image" class="profile-img">
+					<h1>Team 1</h1>
+					<p class="job-title">Status: Inactive</p>
+					<p class="about">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+						Vivamus finibus, magna vitae auctor mollis, lorem ex sollicitudin elit, id fermentum justo enim in nisl.
+						Ut sit amet lorem et sem porttitor scelerisque at convallis orci. Integer at tempus sem.
+						Phasellus blandit at quam sed pharetra. Integer aliquet laoreet justo et pretium.
+						Donec facilisis quis tellus quis tincidunt.
+						Donec justo ligula, scelerisque facilisis ligula et, viverra scelerisque turpis.
+						Nulla feugiat nunc eu lorem elementum venenatis.
+						Nullam lorem ante, dictum sit amet lacus et, gravida tempus metus.
+						In hac habitasse platea dictumst. Sed condimentum sed nulla ac sodales. Vestibulum ac rutrum arcu.
+						Praesent at urna auctor, auctor justo ut, cursus urna.
+					</p>
+					<a href="#" class="btn">Contact</a>
+					<ul class="social-media">
+						<li><a href="#"><i class="fa fab-facebook-square"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
 </body>
 </html>
+<style>
+	* {
+		align-content: center;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		width: 100%;
+		zoom:  100%;
+
+	}
+
+	body {min-width:300px;}
+
+	#menu-container {
+		position: absolute;
+		white-space: nowrap;
+		overflow: hidden;
+		min-width:300px;
+	}
+
+	.top-bar {
+		width: 100%;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333;
+		display: inline-flex;
+		justify-content: space-between;
+		flex: 1;
+		align-content: center;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		transition: top 0.2s ease-in-out;
+		zoom:  100%;
+	}
+
+	.default a{
+		color: white;
+		zoom:  100%;
+	}
+
+	.default {
+		display: inline;
+		float: left;
+		align-content: center;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		zoom:  100%;
+
+	}
+
+	.default a {
+		margin: auto;
+		display: block;
+		text-align: center;
+		padding: 12px 0;
+		text-decoration: none;
+		align-content: center;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		border-right: 2px solid #bbb;
+		zoom:  100%;
+		min-width:50px;
+		width: 100%;
+	}
+
+	/* Changes the link color to #111 (black) on hover */
+	.default a:hover {
+		background-color: #111;
+		zoom:  100%;
+	}
+
+	.default:last-child {
+		border-right: none;
+		align-content: center;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		zoom:  100%;
+		margin-right: 60px;
+	}
+
+
+	.logo {
+		height: 100px;
+		width: 160px;
+		align-content: left;
+		align-items: left;
+		text-align: left;
+		justify-content: left;
+		left:100px;
+		zoom:  100%;
+
+	}
+
+	.twitter {
+		align-content: right;
+		align-items: right;
+		text-align: right;
+		justify-content: right;
+		padding-top: 630px;
+		zoom:  100%;
+		position: absolute;
+		width: 50%;
+		height:auto;
+	}
+
+	.twitter-timeline {
+		align-content: right;
+		align-items: right;
+		text-align: right;
+		justify-content: right;
+		width: 100vw !important;
+	}
+
+	.twitter-container {
+		align-content: right;
+		align-items: right;
+		text-align: right;
+		justify-content: right;
+	}
+
+	.youtube {
+		position: absolute;
+		bottom: 10px;
+		width: 100%;
+		zoom:  100%;
+		position: absolute;
+	}
+
+	.auto-resizable-iframe {
+		margin: 0px auto;
+		zoom:  100%;
+	}
+
+	.auto-resizable-iframe > div {
+		position: relative;
+		padding-bottom: 75%;
+		height: 0px;
+		zoom:  100%;
+	}
+
+	.auto-resizable-iframe iframe {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 1100px;
+		zoom:  100%;
+	}
+
+
+	.login a{
+		font-size: 18px;
+		color: red;
+		zoom:  100%;
+	}
+
+	.sign-up a{
+		font-size: 18px;
+		color: blue;
+		zoom:  100%;
+	}
+</style>
