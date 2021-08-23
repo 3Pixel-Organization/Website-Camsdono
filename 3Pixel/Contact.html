@@ -4,6 +4,7 @@
 	<title>3Pixel | Contact Us</title>
 	<link rel="stylesheet" href="styles.css">
 	<meta name="viewport" content="width=device-width,inital-scale=1">
+	<script src="JavaScript/Options.js"></script>
 </head>
 <body style="background-color: #808080;">
 	<ul style="width: 100%; zoom: 100%">
@@ -17,10 +18,14 @@
 	<div class="email-form emailForm">
 		<div class="title">Contact Us</div>
 		<form style="" action="mail.php" method="post">
-			<input  type="text" name="name" placeholder="Your name">
-			<input type="email" name="emailaddress" placeholder="Your Email Address">
-			<textarea type="text" name="message" placeholder="Your message"></textarea>
-			<button type="submit">Submit</button>
+			<input  type="text" name="name" placeholder="Your name" required>
+			<input type="email" name="emailaddress" placeholder="Your Email Address" required>
+
+			<input type="text" name="topic" placeholder="Your Topic" required></textarea>
+
+			<textarea type="text" name="message" placeholder="Your message" required></textarea>
+			<button type="submit" vlaue="Choose options">Submit</button>
+
 		</form>
 	</div>
 </body>
@@ -28,16 +33,26 @@
 
 <style>
 * {
-  	align-content: center;
-  	align-items: center;
-  	text-align: center;
-  	justify-content: center;
+	font-family: RobotoRegular;
+}
+
+select {
+	outline: 0;
+	margin-bottom: 15px;
+	padding: 5px;
+	width: 100%;
+	border-radius: 5px;
+}
+
+@font-face {
+	font-family: RobotoRegular;
+	src: url("./Fonts/Roboto/Roboto-Regular.ttf");
 }
 
 
-textarea {
+textarea  {
 	width: 100%;
-	border-radius: 15px;
+	border-radius: 5px;
 	margin-bottom: 20px;
 	padding: 5px;
 	border: 1px solid black;
@@ -50,12 +65,13 @@ textarea:focus {
 
 input {
 	width: 100%;
-	border-radius: 15px;
+	border-radius: 5px;
 	margin-bottom: 20px;
 	font-size: 14px;
 	border: 1px solid black;
 	padding: 5px;
 }
+
 
 input:focus {
 	outline: 0;
@@ -80,6 +96,8 @@ input:focus {
 }
 
 button {
+	width: 100px;
+	height: 40px;
 	cursor: pointer;
 	border: 0;
 	padding: 5px 20px 5px 20px;
