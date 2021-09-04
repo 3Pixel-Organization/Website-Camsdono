@@ -2,194 +2,263 @@
 <html>
 <head>
 	<title>3Pixel | Games</title>
-	<link rel="stylesheet" href="styles.css">
 	<meta name="viewport" content="width=device-width,inital-scale=1">
 </head>
 <body>
-	<ul>
+	<ul class="top-bar" style="width: 100%;">
 		<img class="logo" src="./Images/logo.gif">
-  		<li class="default"><a href="index.html">Home</a></li>
-  		<li class="default"><a href="Teams.html">Teams</a></li>
-  		<li class="default"><a href="Games.html">Games</a></li>
-  		<li class="default"><a href="About.html">About Us</a></li>
-  		<li class="default"><a href="Contact.html">Contact Us</a></li>
+		<li class="default"><a href="index.html">Home</a></li>
+		<li class="default"><a href="Teams.html">Teams</a></li>
+		<li class="default"><a href="Games.html">Games</a></li>
+		<li class="default"><a href="About.html">About Us</a></li>
+		<li class="default"><a href="Contact.html">Contact Us</a></li>
 		<li class="default"><a href="LetterOfRecommendation.html">Letters Of Recommendation</a></li>
 	</ul>
 	<h1>Games</h1>
+	<div class="team-nav">
+
+
+		<a href="Teams/Supervisors.html">
+			<button style="justify-content: center; align-items: center; display: flex; flex-direction: column">Supervisors</button>
+		</a>
+
+		<a href="">
+			<button style="justify-content: center; align-items: center; display: flex; flex-direction: column">Unavailable / Empty</button>
+		</a>
+
+		<a href="Teams/Team2.html">
+			<button style="justify-content: center; align-items: center; display: flex; flex-direction: column">Team 2</button>
+		</a>
+
+		<a href="">
+			<button style="justify-content: center; align-items: center; display: flex; flex-direction: column">Unavailable / Empty</button>
+		</a>
+
+		<a href="Teams/Team4.html">
+			<button style="justify-content: center; align-items: center; display: flex; flex-direction: column;">
+				<span style="padding-bottom: 10px">Neon Ninjas</span>
+				<img style="width: 140px; height: 140px;" src="Images/Team4.jpg">
+			</button>
+		</a>
+
+		<a href="Teams/Team5.html">
+			<button style="justify-content: center; align-items: center; display: flex; flex-direction: column;">
+				<span style="padding-bottom: 10px">Just A Studio</span>
+				<img style="width: 140px; height: 140px;" src="Images/Team5.jpg">
+			</button>
+		</a>
+
+		<a href="Games/QuestForArms.html">
+			<button style="justify-content: center; align-items: center; display: flex; flex-direction: column;">
+				<span style="padding-bottom: 10px">Quest For Arms</span>
+				<img style="width: 140px; height: 140px;" src="Images/Team6.jpg">
+			</button>
+		</a>
+
+	</div>
 </body>
 </html>
 
 <style>
-* {
-  	align-content: center;
-  	align-items: center;
-  	text-align: center;
-  	justify-content: center;
-  	width: 100%;
-  	zoom:  100%;
-	font-family: RobotoRegular;
-	margin: 0px;
 
-}
-@font-face {
-	font-family: RobotoRegular;
-	src: url("./Fonts/Roboto/Roboto-Regular.ttf");
-}
+	* {
+		align-content: center;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		zoom:  100%;
+		font-family: RobotoRegular;
+		margin: 0px;
+	}
+	@font-face {
+		font-family: RobotoRegular;
+		src: url("./Fonts/Roboto/Roboto-Regular.ttf");
+	}
 
-body {min-width:300px;}
+	.team-nav {
+		margin-top: 15%;
+		width: 100%;
+		padding: 10px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 
-#menu-container {
-    position: absolute;
-    white-space: nowrap;
-    overflow: hidden;
-    min-width:300px;
-}
+	a {
+		text-decoration: none;
 
-ul {
-	width: 100%;
-	list-style-type: none;
-  	margin: 0;
-  	padding: 0;
-  	overflow: hidden;
-  	background-color: #333;
-  	display: inline-flex;
-  	justify-content: space-between;
-  	flex: 1;
-  	align-content: center;
-  	align-items: center;
-  	text-align: center;
-  	justify-content: center;
-  	transition: top 0.2s ease-in-out;
-  	zoom:  100%;
-}
+	}
 
-.default a{
-	color: white;
-	zoom:  100%;
-}
-
-li {
-  	display: inline;
-  	float: left;
-  	align-content: center;
-  	align-items: center;
-  	text-align: center;
-  	justify-content: center;
-  	zoom:  100%;
-
-}
-
-li a {
-	margin: auto;
-  	display: block;
-  	text-align: center;
-  	padding: 12px 0;
-  	text-decoration: none;
-  	align-content: center;
-  	align-items: center;
-  	text-align: center;
-  	justify-content: center;
-  	border-right: 2px solid #bbb;
-  	zoom:  100%;
-  	min-width:50px;
-  	width: 100%;
-}
-
-/* Changes the link color to #111 (black) on hover */
-li a:hover {
-  	background-color: #111;
-  	zoom:  100%;
-}
-
-li:last-child {
-  	border-right: none;
-  	align-content: center;
-  	align-items: center;
-  	text-align: center;
-  	justify-content: center;
-  	zoom:  100%;
-  	margin-right: 60px;
-}
+	button {
+		width: 160px;
+		height: 200px;
+		margin: 5px;
+		border-radius: 5px;
+		border: none;
+	}
 
 
-.logo {
-  	height: 100px;
-  	width: 160px;
-  	align-content: left;
-  	align-items: left;
-  	text-align: left;
-  	justify-content: left;
-  	left:100px;
-  	zoom:  100%;
 
-}
-
-.twitter {
-  	align-content: right;
-  	align-items: right;
-  	text-align: right;
-  	justify-content: right;
-  	padding-top: 630px;
-  	zoom:  100%;
-  	position: absolute;
-  	width: 50%;
-  	 height:auto;
-}
-
-.twitter-timeline {
-	align-content: right;
-  	align-items: right;
-  	text-align: right;
-  	justify-content: right;
-    width: 100vw !important;
-}
-
-.twitter-container {
-	align-content: right;
-  	align-items: right;
-  	text-align: right;
-  	justify-content: right;
-}
-
-.youtube {
-  	position: absolute;
-  	bottom: 10px;
-  	width: 100%;
-  	zoom:  100%;
-  	position: absolute;
-}
-
-.auto-resizable-iframe {
-  	margin: 0px auto;
-  	zoom:  100%;
-}
-
-.auto-resizable-iframe > div {
-  	position: relative;
-  	padding-bottom: 75%;
-  	height: 0px;
-  	zoom:  100%;
-}
-
-.auto-resizable-iframe iframe {
-  	position: absolute;
-  	top: 0px;
-  	left: 0px;
-  	width: 100%;
-  	height: 1100px;
-  	zoom:  100%;
-}
+	button:hover {
+		cursor: pointer;
+		background-color: #C0C0C0;
+	}
 
 
-.login a{
-	font-size: 18px;
-	color: red;
-	zoom:  100%;
-}
+	body {min-width:300px;}
 
-.sign-up a{
-	font-size: 18px;
-	color: blue;
-	zoom:  100%;
-}
+	#menu-container {
+		position: absolute;
+		white-space: nowrap;
+		overflow: hidden;
+		min-width:300px;
+	}
+
+	.top-bar {
+		width: 100%;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333;
+		display: inline-flex;
+		justify-content: space-between;
+		flex: 1;
+		align-content: center;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		transition: top 0.2s ease-in-out;
+		zoom:  100%;
+	}
+
+	.default a{
+		color: white;
+		zoom:  100%;
+	}
+
+	.default {
+		display: inline;
+		float: left;
+		align-content: center;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		zoom:  100%;
+		width: 100%;
+	}
+
+	.default a {
+		margin: auto;
+		display: block;
+		text-align: center;
+		padding: 12px 0;
+		text-decoration: none;
+		align-content: center;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		border-right: 2px solid #bbb;
+		zoom:  100%;
+		min-width:50px;
+		width: 100%;
+	}
+
+	/* Changes the link color to #111 (black) on hover */
+	.default a:hover {
+		background-color: #111;
+		zoom:  100%;
+	}
+
+	.default:last-child {
+		border-right: none;
+		align-content: center;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		zoom:  100%;
+		margin-right: 60px;
+	}
+
+
+	.logo {
+		height: 100px;
+		width: 160px;
+		align-content: left;
+		align-items: left;
+		text-align: left;
+		justify-content: left;
+		left:100px;
+		zoom:  100%;
+
+	}
+
+	.twitter {
+		align-content: right;
+		align-items: right;
+		text-align: right;
+		justify-content: right;
+		padding-top: 630px;
+		zoom:  100%;
+		position: absolute;
+		width: 50%;
+		height:auto;
+	}
+
+	.twitter-timeline {
+		align-content: right;
+		align-items: right;
+		text-align: right;
+		justify-content: right;
+		width: 100vw !important;
+	}
+
+	.twitter-container {
+		align-content: right;
+		align-items: right;
+		text-align: right;
+		justify-content: right;
+	}
+
+	.youtube {
+		position: absolute;
+		bottom: 10px;
+		width: 100%;
+		zoom:  100%;
+		position: absolute;
+	}
+
+	.auto-resizable-iframe {
+		margin: 0px auto;
+		zoom:  100%;
+	}
+
+	.auto-resizable-iframe > div {
+		position: relative;
+		padding-bottom: 75%;
+		height: 0px;
+		zoom:  100%;
+	}
+
+	.auto-resizable-iframe iframe {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 1100px;
+		zoom:  100%;
+	}
+
+
+	.login a{
+		font-size: 18px;
+		color: red;
+		zoom:  100%;
+	}
+
+	.sign-up a{
+		font-size: 18px;
+		color: blue;
+		zoom:  100%;
+	}
 </style>
